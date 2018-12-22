@@ -23,7 +23,7 @@ $(document).ready(function () {
         event.preventDefault();
         // Grab values from text boxes
         //trim values
-        var train = $("#name-input").val();
+        var train = $("#name-input").val().trim();
         var destination = $("#destination-input").val().trim();
         var time = $("#time-input").val().trim();
         var frequency = $("#frequency-input").val().trim();
@@ -31,20 +31,20 @@ $(document).ready(function () {
         //wanted to do input validation but it did not work that well
         //input validation
         // if (train != "" &&
-            // destination != "" &&
-            // time.length === 4 &&
-            // frequency != "") {
+        // destination != "" &&
+        // time.length === 4 &&
+        // frequency != "") {
 
-            // Code for handling the push
-            
-            database.ref().push({
-                train: train,
-                destination: destination,
-                time: time,
-                frequency: frequency
-            });
+        // Code for handling the push
 
-            //checks to see if input is valid
+        database.ref().push({
+            train: train,
+            destination: destination,
+            time: time,
+            frequency: frequency
+        });
+
+        //checks to see if input is valid
         // } else {
         //     alert("Please enter valid train data");
         //     $("input").val("");
@@ -52,7 +52,7 @@ $(document).ready(function () {
         // }
 
         //console.log(database);
-        $("input").val("");
+        // $("input").val("");
 
     });
 
@@ -118,14 +118,14 @@ $(document).ready(function () {
         var arrival = moment(nextArrival).format("HHmm");
         console.log(arrival);
 
-      //input 
+        //input 
         $("#train-input").append(
-            "<tr><td id='nameDisplay'>" + childSnapshot.val().trainName +
+            "<tr><td id='nameDisplay'>" + childSnapshot.val().train + //THIS DOESN"T WORK!!!!!!!
             "<td id='destinationDisplay'>" + childSnapshot.val().destination +
             "<td id='frequencyDisplay'>" + childSnapshot.val().frequency +
             "<td id='arrivalDisplay'>" + arrival +
             "<td id='awayDisplay'>" + nextTrainTime + " minutes" + "</td></tr>");
 
-      
-        });
+
     });
+});
