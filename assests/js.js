@@ -90,6 +90,8 @@ $(document).ready(function () {
         var trainTime = moment(convertDate).format("HHmm");
         console.log(trainTime);
 
+
+        //check for difference in times
         var convertTime = moment(trainTime, "HHmm").subtract(1, "years");
         console.log(convertTime);
         //calculating time difference in minutes
