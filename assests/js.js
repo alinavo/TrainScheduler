@@ -120,7 +120,7 @@ $(document).ready(function () {
 
         //input 
         $("#train-input").append(
-            "<tr><td id='nameDisplay'>" + childSnapshot.val().train + //THIS DOESN"T WORK!!!!!!!
+            "<tr><td id='nameDisplay'>" + childSnapshot.val().train + 
             "<td id='destinationDisplay'>" + childSnapshot.val().destination +
             "<td id='frequencyDisplay'>" + childSnapshot.val().frequency +
             "<td id='arrivalDisplay'>" + arrival +

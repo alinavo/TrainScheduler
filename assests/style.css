@@ -1,6 +1,8 @@
+
 body {
     font-family: 'Thasadith', sans-serif;
-    
+    background-color: #4D131F;
+
 }
 
 .jumbotron {
@@ -12,18 +14,22 @@ body {
     border: 10px;
 }
 
-h1{
+h1 {
     text-align: center;
 
 }
 
 .btn {
-    background-color:#4D131F;
-    color: 	#E0D59B; 
+    color: #4D131F;
+    background-color: 	#E0D59B; 
+    font-family: 'Thasadith', sans-serif;
+    font-weight: bold;
+    
 }
 
 .card-header {
-    background-color: #4D131F;
-    color: 	#E0D59B; 
+    color: #4D131F;
+    background-color: #E0D59B; 
    
+
 }
