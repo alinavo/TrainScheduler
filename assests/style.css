@@ -3,4 +3,21 @@
     background-repeat: no-repeat;
     background-position: left;
     background-size: auto 100%;
+    background-color: 	#4D131F;
+    border: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+.btn {
+    background-color:#4D131F;
+    color: 	#E0D59B;
+}
+
+.card-header{
+    background-color:#4D131F;
+    color: 	#E0D59B;
+
 }
